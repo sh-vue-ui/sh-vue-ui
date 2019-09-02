@@ -1,0 +1,6 @@
+@b v-hello {
+    color: #000;
+    @e message {
+        background-color: #fff;
+    }
+}
