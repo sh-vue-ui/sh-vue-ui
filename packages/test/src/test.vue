@@ -1,15 +1,18 @@
 <!--test.vue-->
-<style scoped>
-    .sh-test {
-        width: 100px;
-        height: 100px;
-        line-height: 100px;
-        border-radius: 50%;
-        font-size: 30px;
-        text-align: center;
-        background: #24292e;
-        color: white;
+<style lang="scss">
+    .sh-{
+        &test {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            border-radius: 50%;
+            font-size: 30px;
+            text-align: center;
+            background: #24292e;
+            color: white;
+        }
     }
+
 </style>
 <template>
     <div class="sh-test" @click="handleClick">{{ num }}</div>
