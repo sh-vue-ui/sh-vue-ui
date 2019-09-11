@@ -1,20 +1,32 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
     <sh-test></sh-test>
+
+    <div @click="start">开始</div>
+    <div @click="end">结束</div>
+    <div @click="error">错误</div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
+  export default {
+      name: 'app',
+      components: {
+
+      },
+      methods: {
+          start () {
+              this.$loadingBar.start()
+          },
+          end () {
+              this.$loadingBar.end()
+          },
+          error () {
+              this.$loadingBar.error()
+          }
+      }
   }
-}
 </script>
 
 <style>

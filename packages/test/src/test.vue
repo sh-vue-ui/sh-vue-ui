@@ -12,7 +12,6 @@
             color: white;
         }
     }
-
 </style>
 <template>
     <div class="sh-test" @click="handleClick">{{ num }}</div>
